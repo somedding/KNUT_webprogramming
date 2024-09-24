@@ -1,0 +1,54 @@
+body{
+    margin: 5vh;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(234, 240, 181);
+}
+
+#jaemok{
+    text-align: center;
+}
+
+#naeyong{
+    color:rgb(157, 151, 163);
+}
+
+#career{
+    color:rgb(157, 151, 163);
+    
+}
+
+#family{
+    color:rgb(157, 151, 163);
+    
+}
+
+#techy{
+    color:rgb(157, 151, 163);
+    
+}
+
+table {
+    width: 50px; 
+    max-width: 1200px; 
+    height: 300px; 
+}
+td {
+    border: 1px solid black; 
+    height: 10px; 
+    text-align: center; 
+    vertical-align: middle; 
+    width: 80px;
+}
+.time-column {
+            width: 150px; 
+}
+
+footer {
+    text-align: center; /* 중앙 정렬 */
+    padding: 10px; /* 패딩 추가 */
+    position: relative; /* 위치 설정 */
+    bottom: 0; /* 하단 고정 */
+    width: 100%; /* 폭 100% */
+}
