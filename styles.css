@@ -29,6 +29,11 @@ body{
     
 }
 
+#philosophy{
+    color:rgb(157, 151, 163);
+    
+}
+
 table {
     width: 50px; 
     max-width: 1200px; 
@@ -51,4 +56,13 @@ footer {
     position: relative; /* 위치 설정 */
     bottom: 0; /* 하단 고정 */
     width: 100%; /* 폭 100% */
+}
+
+#tomenu{
+    text-align: right;
+}
+.menu-button {
+    color: white; /* 글자색 */
+    text-decoration: none; /* 밑줄 제거 */
+    margin: 10px 0; /* 상하 마진 추가 */
 }
