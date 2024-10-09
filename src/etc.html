@@ -7,6 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    etc etc
+    <h3>Details & Submit</h3>
+    <hr>
+    <details>
+        <summary>Question 1</summary> 질문
+    </details>
+    <details>
+        <summary>Answer 1</summary> 대답
+    </details>
+
+    <h3>인라인 시맨틱 태그 사례</h3>
+    <hr>
+    <p> 내일 <mark>HTML5 시험</mark> <br>
+    시간은 <time> 9:00 </time><br>
+    난이도 <meter value="0.8" max="10"></meter><br>
+    자료 업로딩(20%)
+        <progress value="2" max="10"></progress><br>
+        </p>
+    <h3>로그인 폼</h3>
+    <hr>
+    <form name="fo" method="get">
+    사용자 ID : <input type="text" , size="15" , value=""> <br>
+    비밀 번호 : <input type="password" size="15" , value="""> <br>
+    자소서📏 : <textarea cols="20" rows="30">이곳에 자기소개서 작성</textarea>
+    <input type="submit" value="완료"> 
+    </form>
+
+    <h3>데이터 리스트</h3>
+    <hr>
+    
+    <form>
+    나라 : <input type="text" list="countries"><br>
+        <datalist id="countries">
+            <option value="가나"></option>
+            <option value="스위스"></option>
+            <option value="오스트리아"></option>
+        </datalist>
+    보고싶은것 : <input type="text" list="what"><br>
+        <datalist id="what">
+            <option value="산"></option>
+            <option value="바다"></option>
+            <option value="도시"></option>
+        </datalist>
+    </form>
 </body>
 </html>
