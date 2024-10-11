@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>친구 </title>
+    
+</head>
+<body>
+    <form id="payment" action="congrats.html" method="get">
+        <!-- 나의 색깔 -->
+        <fieldset>
+            <legend>나의 색깔</legend>
+            <input type="color" value="#00BFFF" onchange="document.body.style.color=this.value">
+        </fieldset>
+
+        <!-- 신상정보 -->
+        <fieldset>
+            <legend>신상정보</legend>
+            <ol>
+                <li>이 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 름 : <input type="text" size="15" value="이름"> <br> </li>
+                <li>이 &nbsp&nbsp&nbsp메&nbsp&nbsp&nbsp일 : <input type="text" size="15" value=""> <br> </li>
+                <li>휴대폰 번호: <input type="text" size="15" value="01012345678"> <br> </li>
+            </ol>
+        </fieldset>
+        
+        <fieldset>
+            <legend>신상정보 추가</legend>
+            <ol>
+                <li>직업 : <input type="text" list="countries"><br>
+                    <datalist id="countries">
+                        <option value="학생"></option>
+                        <option value="직장인"></option>
+                        <option value="무직"></option>
+                    </datalist></li>
+                <li>성 별: <input type="radio" name="gender" value="남자"> 남자 
+                    <input type="radio" name="gender" value="여자"> 여자 
+                    <input type="radio" name="gender" value="정의하지 않음"> 정의하지 않음<br> 
+                </li>
+                <li>취미 : 
+                    <input type="checkbox" value="독서"> 독서 
+                    <input type="checkbox" value="게임"> 게임 
+                    <input type="checkbox" value="영화감상"> 영화감상 
+                    <input type="checkbox" value="음악감상"> 음악감상 
+                    <input type="checkbox" value="축구"> 축구<br> 
+                </li>
+                <li>생년월일 <br>
+                    <table>
+                        <tr>
+                            <td>생일</td>
+                            <td><input type="month" value="2002-11-28"></td>
+                        </tr>
+                        <tr>
+                            <td>생일</td>
+                            <td><input type="date" value="2002-11-28"></td>
+                        </tr>
+                        <tr>
+                            <td>생일파티시간</td>
+                            <td><input type="time"></td>
+                        </tr>
+                    </table>
+                </li>
+            </ol>
+        </fieldset>
+        
+        <br>
+        자기소개글
+        <br>
+        <textarea cols="80" rows="20">이곳에 자기소개서 작성</textarea>
+        
+        <br><br>
+        <input type="reset" value="취소하기" >
+        <input type="submit" value="등록하기">
+        <button type="button">
+            <img src="/img/github.png" alt="이미지 버튼" style="width: 40px; height: 40px;">
+        </button>
+    </form>
+
+    <br>
+    
+</body>
+</html>
