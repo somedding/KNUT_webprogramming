@@ -1,14 +1,25 @@
+@font-face {
+    font-family: 'SF_HambakSnow';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     margin: 5vh;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(234, 240, 181);
+    background-color: #ced4da;
+    font-family: 'SF_HambakSnow';
 }
 
 #jaemok{
     text-align: center;
+    
 }
+
+
 
 #naeyong{
     color:rgb(157, 151, 163);
@@ -17,6 +28,11 @@ body{
 #career{
     color:rgb(157, 151, 163);
     
+}
+
+#career li:hover{
+    background-color:yellow;
+    transform: scale(1.1);
 }
 
 #family{
@@ -43,6 +59,7 @@ table {
     max-width: 1200px; 
     height: 300px; 
 }
+
 td {
     border: 1px solid black; 
     height: 10px; 
@@ -67,7 +84,41 @@ footer {
     text-align: right;
 }
 .menu-button {
-    color: white; /* 글자색 */
-    text-decoration: none; /* 밑줄 제거 */
-    margin: 10px 0; /* 상하 마진 추가 */
+    color: white; 
+    text-decoration: none; 
+    margin: 10px 0; 
+}
+
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    text-align: center;
+}
+
+ul a {
+    text-decoration: none; 
+    color: gray; 
+    padding: 3px; 
+    transition: color 0.3s ease, transform 0.5s ease; 
+    display: inline-block; /* 이거 때문에 작동 안했음*/
+}
+
+ul a:hover {
+    color: black; /* 호버 시 글자 색상 변경 */
+    transform: scale(1.1); 
+    transition-duration: 0.5s; /* 전환 시간 */
+}
+
+
+
+#yearnum:hover {
+    color: Blue; /* 호버 시 글자 색상 변경 */
+    transform: scale(1.4); 
+    transition-duration: 0.5s;
+}
+
+#yearnum {
+    font-size: 30px;
+    color:#495057 ;
 }
