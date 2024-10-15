@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'SF_HambakSnow';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -11,7 +11,7 @@ body{
     align-items: center;
     height: 100vh;
     background-color: #ced4da;
-    font-family: 'SF_HambakSnow';
+    font-family: 'Pretendard-Regular';
 }
 
 #jaemok{
@@ -121,4 +121,5 @@ ul a:hover {
 #yearnum {
     font-size: 30px;
     color:#495057 ;
+    font-weight: bold;
 }
