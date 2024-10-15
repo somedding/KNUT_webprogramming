@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body{
     margin: 5vh;
     justify-content: center;
@@ -16,10 +23,14 @@ body{
 
 #jaemok{
     text-align: center;
-    
+    font-family: 'LOTTERIACHAB';
+    font-size: 42px;
 }
 
-
+#jaemok:hover{
+    color: snow;
+    transition: color 0.5s ease, transform 0.5s ease; 
+}
 
 #naeyong{
     color:rgb(157, 151, 163);
@@ -33,6 +44,7 @@ body{
 #career li:hover{
     background-color:yellow;
     transform: scale(1.1);
+    transition: color 0.3s ease, transform 0.5s ease; 
 }
 
 #family{
