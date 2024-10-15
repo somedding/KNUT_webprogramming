@@ -84,6 +84,14 @@ td {
     width: 150px; 
 }
 
+.time {
+    background-color : #ffc0cb;
+}
+
+.date {
+    background-color : #FEFD48;
+}
+
 footer {
     text-align: center; /* 중앙 정렬 */
     padding: 10px; /* 패딩 추가 */
