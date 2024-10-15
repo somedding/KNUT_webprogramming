@@ -42,8 +42,8 @@ body{
 }
 
 #career li:hover{
-    background-color:yellow;
-    transform: scale(1.1);
+    background-color: #ffc0cb;
+    transform: scale(1.031);
     transition: color 0.3s ease, transform 0.5s ease; 
 }
 
