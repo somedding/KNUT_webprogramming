@@ -49,7 +49,6 @@ body{
 
 #family{
     color:rgb(157, 151, 163);
-    
 }
 
 #techy{
@@ -92,6 +91,7 @@ td {
     background-color : #FEFD48;
 }
 
+
 footer {
     text-align: center; /* 중앙 정렬 */
     padding: 10px; /* 패딩 추가 */
@@ -103,6 +103,7 @@ footer {
 #tomenu{
     text-align: right;
 }
+
 .menu-button {
     color: white; 
     text-decoration: none; 
@@ -142,4 +143,9 @@ ul a:hover {
     font-size: 30px;
     color:#495057 ;
     font-weight: bold;
+}
+
+#where {
+    font-size: 0.7em;
+    color: rgb(105,105,105);
 }
