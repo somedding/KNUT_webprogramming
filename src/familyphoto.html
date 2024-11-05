@@ -4,6 +4,11 @@
 1. 가족 앨범메뉴 만들고 2023~2024년도별 앨범 만들기
    1) 23년은 사진을 세로로 배열하고 텍스와 그림박스에 스타일 적용하기
    2) 24년은 사진을 가로로 배치 하여 넣을것 
+   
+   11/5
+   1) 가족 사진 호버링 하면 위쪽은 오른쪽 위로 아래는 오른쪽 아래로 이동 (상대 배치)
+   2) fixed 브라우저 오른쪽 아래 
+   3) float 사용
    -->
 <html lang="en">
     <head>
@@ -12,14 +17,34 @@
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
+
+        <p id="float">
+            이 사진은 AI가 만든 사진 입니다.
+        </p>
+
         <h3 id="texteffectnum">2023년 1월</h3>
         <div id="photo"></div>
         <div id="photo1"></div>
         <div id="photo2"></div>
 
+        <div id="photoinlinesub">
         <h3 style="text-align: center;">2024년</h3>
         <div id="photoinline"> </div>
         <div id="photoinline"> </div>
         <div id="photoinline"> </div>
+        </div>
+
+        <div id="absolute">
+            <img src="/img/familyphoto2.png" alt="가족사진">
+        </div>
+
+        <div>
+            <img id="photo3" src="/img/familyphoto.png" width="250" height="250">
+            <img id="photo4" src="/img/familyphoto2.png" width="250" height="250">
+            <img id="photo5" src="/img/mother.jpg" width="250" height="250">
+            <img id="photo6" src="/img/father.png" width="250" height="250">
+        </div>
+
+
     </body>
 </html>

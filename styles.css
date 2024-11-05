@@ -28,7 +28,7 @@ body{
 }
 
 #jaemok:hover{
-    color: snow;
+    color: #7e6a6a;
     transition: color 0.5s ease, transform 0.5s ease; 
 }
 
@@ -77,6 +77,10 @@ body{
     text-align: center; 
     vertical-align: middle; 
     width: 80px;
+}
+
+#tablecolor:hover{
+    background-color: lightgoldenrodyellow;
 }
 
 .time-column {
@@ -165,6 +169,12 @@ ul a:hover {
         box-shadow:inset 20px 20px 20px 20px rgba(100,100,100,100);
 }
 
+#photo:hover {
+    position : relative;
+    left: 20px;
+    bottom: 20px;
+}
+
 #photo1 {
     background-size : 250px 250px;
     background-image : url("/img/familyphoto2.png");
@@ -178,6 +188,12 @@ ul a:hover {
     margin-right: auto;
     -webkit-box-shadow:inset 0 0 10px 2px #33FF70;
     box-shadow:inset 0 0 10px 2px #33FF70;
+}
+
+#photo1:hover {
+    position : relative;
+    left: 20px;
+    bottom: 20px;
 }
 
 #photo2 {
@@ -195,6 +211,36 @@ ul a:hover {
     box-shadow:inset 10px 20px 10px 10px #FF6363;
 }
 
+#photo2:hover {
+    position : relative;
+    left: 20px;
+    bottom: 20px;
+}
+
+#photo3 {
+    position:absolute;
+    z-index: -3; left: 400px; top: 1150px;
+    border: dotted darkcyan;
+}
+
+#photo4 {
+    position:absolute;
+    z-index: 2; left: 440px; top: 1180px;
+    border: dotted violet;
+}
+
+#photo5 {
+    position:absolute;
+    z-index: 4; left: 480px; top: 1220px;
+    border: dotted deeppink;
+}
+
+#photo6 {
+    position:absolute;
+    z-index: 6; left: 520px; top: 1260px;
+    border: dotted black;
+}
+
 #texteffectnum {
     text-shadow: 0px 0px 3px darkblue;
     text-align: center;
@@ -206,9 +252,34 @@ ul a:hover {
     background-image: url("/img/father.png");
     margin : 5px;
     width: 204px; height: 192px;
-
+    
 }
 
 #photoinline h3{
     text-align: center;
+}
+
+#photoinlinesub:hover {
+    position: relative;
+    left: 20px;
+    top: 20px;
+}
+
+#absolute {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+#absolute img {
+    width: 200px;
+    height: 200px;
+}
+
+#float {
+    float: left;
+    border: 1px dotted #FF6363;
+    width: 8em;
+    padding: 0.25em;
+    margin: 1em;
 }
