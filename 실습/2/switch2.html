@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch 예제 2</title>
+</head>
+<body>
+    월~목: 출근, 금~일: 휴무 찍기
+    <script>
+        let day = prompt("오늘은 무슨 요일인가요?");
+        switch(day) {
+            case '월': case '화': case '수': case '목': alert("출근"); break;
+            case '금': case '토': case '일': alert("휴무"); break;
+            default: alert("잘못된 요일입니다");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 예제 3</title>
+</head>
+<body>
+    급식비 계산: 1,2학년은 3만원  / 3,4학년은 5만원 / 5,6학년은 6만원
+    <script>
+        let grade = prompt("학년을 입력하시오");
+        let price = 0;
+        switch (grade) {
+            case '1': case '2': price = 30000; break;
+            case '3': case '4': price = 50000; break;
+            case '5': case '6': price = 60000; break;
+            default: alert("잘못된 학년입니다");
+        }
+        alert("급식비는 " + price + "원입니다");
+    </script>
+</body>
+</html>

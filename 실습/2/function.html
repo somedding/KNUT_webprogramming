@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function 예제</title>
+</head>
+<body>
+    <h3>사칙연산을 함수로 변환</h3>
+    <script>
+        function add(a, b) {
+            return a + b;
+        }
+        function sub(a, b) {
+            return a - b;
+        }
+        function mul(a, b) {
+            return a * b;
+        }
+        function div(a, b) {
+            return a / b;
+        }
+
+        let a = Number(prompt("첫번째 수"));
+        let b = Number(prompt("두번째 수"));
+        document.write(add(a, b) + "<br>");
+        document.write(sub(a, b) + "<br>");
+        document.write(mul(a, b) + "<br>");
+        document.write(div(a, b) + "<br>");
+    </script>
+</body>
+</html>

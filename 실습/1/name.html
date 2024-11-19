@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>name</title>
+</head>
+<body>
+    <h3>prompt() , parseInt() , document.write() 활용</h3>
+    <hr>
+    <script>
+        var name, age, agree;
+        name = prompt("이름을 입력하시오", "이름");
+        document.write("당신의 이름은" + name + "이군요 <br>");
+
+        age = prompt("이버넨 나이를 만으로 입력해보세요" , "18");
+        agree = parseInt(age) + 1;
+        document.write(name + "님의 나이는 한국나이로" + agree + "이군요");
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 계산기</title>
+</head>
+<body>
+    <h3>Document.Write 활용</h3>
+    <script>
+        var x , y, kk;
+        var input;
+
+        input = prompt("x 정수를 입력하시오", "y");
+        x = parseInt(input);
+
+        input = prompt("y 정수를 입력하시오", "x");
+        y = parseInt(input);
+
+        kk = x + y;
+        document.write("두수의 합은" + kk + "입니다");
+    </script>
+</body>
+</html>

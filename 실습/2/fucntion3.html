@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function 예제 3</title>
+</head>
+<body>
+    <h3>구구단을 함수로 변환</h3>
+    <!-- for(let i = 2; i <= 9; i++) {
+            
+
+        document.write("<div>");
+        document.write(  i + "단" + "<br>");
+        
+        for(let j = 1; j <= 9; j++) {
+            document.write( i + " * " + j + " = " + i * j + "<br>" );
+        }
+        document.write("</div>");
+        document.write("<br>");
+        document.write("<br>");
+    } 참고하여 제작 -->
+<script>
+    function gugudan(a) {
+        for(let j = 1; j <= 9; j++) {
+            document.write( a + " * " + j + " = " + a * j + "<br>" );
+        }
+    }
+    let a = Number(prompt("단수를 입력하세요"));
+    document.write( a+ "단" + "<br>");
+    gugudan(a);
+</script>
+
+</body>
+</html>

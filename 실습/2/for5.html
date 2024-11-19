@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for while 예제 5</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="text-align:  center;">표에 숫자와 제곱값 출력</h3>
+    <table id="table">
+        <tbody id="tableBody">
+            <tr id="numbersRow">
+            </tr>
+            <tr id="squaresRow">
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const numbersRow = document.getElementById('numbersRow'); 
+        const squaresRow = document.getElementById('squaresRow'); 
+
+        for (let i = 1; i <= 99; i++) {
+            const numberCell = document.createElement('td');
+            numberCell.textContent = i;
+            numbersRow.appendChild(numberCell);
+
+            
+            const squareCell = document.createElement('td');
+            squareCell.textContent = i * i;
+            squaresRow.appendChild(squareCell);
+        }
+    </script>
+</body>
+</html>

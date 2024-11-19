@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch 예제 4</title>
+</head>
+<body>
+    할인율 계산: 초등학생과 중학생은 50% / 고등학생과 대학생은 30% / 일반인은 10% 할인
+    <script>
+        let age = prompt("신분을 입력해주세요");
+        let discount = 0;
+        switch(age) {
+            case '초등학생': case '중학생': discount = 0.5; break;
+            case '고등학생': case '대학생': discount = 0.3; break;
+            default: discount = 0.1;
+        }
+        alert("할인율은 " + discount * 100 + "%입니다");
+    </script>
+</body>
+</html>

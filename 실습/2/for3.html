@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For while 예제 3</title>
+</head>
+<body>
+    <h3>별 피라미드 찍기 (for, while)</h3>
+            <!-- 
+                 *
+               * * *
+             * * * * *
+           * * * * * * *
+    -->
+    <script>
+        let floor = prompt("몇 층으로 할까요?");
+        for(let i = 1; i <= floor; i++) {
+            for(let j = 1; j <= i; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+        document.write("<br>");
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function 예제 2</title>
+</head>
+<body>
+    <h3>홀짝 판별을 함수로 변환</h3>
+    <script>
+        function oddEven(a) {
+            return a % 2 == 0 ? "짝수" : "홀수";
+        }
+        let a = Number(prompt("숫자를 입력하세요"));
+        document.write(a + "은(는)" + oddEven(a) + "입니다.");
+    </script>
+</body>
+</html>
