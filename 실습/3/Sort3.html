@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <!-- 5개를 정수를 입력받아 오름차순으로 정렬하시오 -->
+    <h3>오름차순 정렬</h3>
+    <script>
+        let n = [];
+        for(let i = 0; i < 5; i++) {
+            n[i] = Number(prompt(`${i+1}번째 정수를 입력하세요.`));
+        }
+        n.sort((a, b) => a - b); 
+        for(let i = 0; i < 5; i++) {
+            document.write(n[i] + " ");
+        }
+    </script>
+</body>
+</html>

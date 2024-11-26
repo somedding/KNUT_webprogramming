@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+</head>
+<body>
+    <!-- 방문 시간, 날짜에 따라 배경색이 바뀌게 변경하기 : 일요일은 Pink, 다른요일은 gold 배경 , 그리고 오늘 날짜와 요일(한글로) 출력하기-->
+    <h3>배경색 변경</h3>
+    <script>
+        let date = new Date();
+        let day = date.getDay();
+        if(day == 0) {
+            document.body.style.backgroundColor = "pink";
+        } else {
+            document.body.style.backgroundColor = "gold";
+        }
+        document.write(`<br>`);
+        let dayNames = ['일', '월', '화', '수', '목', '금', '토'];
+        document.write(`오늘은 ${date.toLocaleDateString()} 이고, 요일은 ${dayNames[day]}요일 입니다.`);
+    </script>
+</body>
+</html>

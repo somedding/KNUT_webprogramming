@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <!-- 5개의 정수를 입력 받아 배열에 저장시키고 역순으로 출력하는 프로그램을 작성하시오  < 힌트 : reverse() 메소드 사용 > , prompt 에서 정수로 입력 받아야한다 -->
+     <h3>내림차순 정렬</h3>
+    <script>    
+        let n = [];
+        for(let i = 0; i < 5; i++) {
+            n[i] = Number(prompt(`${i+1}번째 정수를 입력하세요.`));
+        }
+        n.sort((a, b) => a - b);
+        n.reverse();
+        // n.sort((a, b) => b - a); //이렇게 표현할 수 있음
+        for(let i = 0; i < 5; i++) {
+            document.write(n[i] + " ");
+        }
+    </script>
+</body>
+</html>

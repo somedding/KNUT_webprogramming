@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단 OX퀴즈</title>
+</head>
+<body>
+    <!-- 랜덤한 구구단과 답을 출력하고 이것이 틀리면 O 맞으면 X 를 출력 -->
+    <script>
+        let a = Math.floor(Math.random() * 9) + 1;
+        let b = Math.floor(Math.random() * 9) + 1;
+        let e = a * b;
+        let c;
+        if(Math.random() < 0.4) {
+            c = e; 
+        } else {
+            do {
+                c = Math.floor(Math.random() * 82);
+            } while(c === e);
+        }
+        let d = prompt(`${a} * ${b} = ${c} : O 또는 X를 입력하세요.`);
+        let isCorrect = (e === c);
+        let correctAnswer = isCorrect ? 'O' : 'X';
+        
+        if(d === correctAnswer) {
+            document.write(`${a} * ${b} = ${c} ${d} : 정답입니다!`);
+        } else {
+            document.write(`${a} * ${b} = ${c} ${d} : 틀렸습니다!`);
+        }
+    </script>
+</body>
+</html>

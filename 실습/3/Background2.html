@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background 2</title>
+</head>
+<body>
+    <!-- 방문 시간에 따라 배경색 변경하기 오전이면 Lightskyblue, 오후면 orange -->
+    <h3>배경색 변경 (시간별 : 오전은 lightskyblue, 오후는 orange)</h3>
+    <script>
+        let date = new Date();
+        let hour = date.getHours();
+        if (hour >= 6 && hour < 10) {
+            document.body.style.backgroundColor = "lightskyblue";
+        } else {
+            document.body.style.backgroundColor = "orange";
+        }
+        document.write(`현재 시간은 ${date.toLocaleTimeString()} 입니다.`);
+    </script>
+</body>
+</html>

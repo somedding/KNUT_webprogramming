@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort 메소드</title>
+</head>
+<style>
+    h3 {
+        margin: 10px;
+    }
+    @font-face {
+    font-family: 'LOTTERIADDAG';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIADDAG.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+    h3 {
+        font-family: 'LOTTERIADDAG';
+    }
+</style>
+<body>
+    <script>
+        let n=[];
+        for(let i=0; i<10; i++) {
+        let x = Math.random()*100 + 1;
+        n[i] = Math.floor(x);
+        }
+        
+        for(let i=0; i<10; i++)
+        document.write(n[i] + " ");
+        
+        document.write("<hr>");
+        let big = n[0];
+        for(let i=1; i<10; i++) {
+        if(n[i] > big)
+        big = n[i];
+        }
+        document.write("큰 수는 " + big);
+        document.write("<hr>");
+        n.sort(); // 배열 정렬
+        for(let i=0; i<10; i++)
+            document.write(n[i] + " ");
+    </script>        
+
+    <hr>
+
+    <h3>어떤 일 을 수행하는지 분석하고 여기에 사용된 메소드를 나열하고 기능을 설명하시오</h3>
+    1. 배열 n을 생성하고 10개의 랜덤한 숫자를 채워넣는다. <br>
+    2. 배열 n을 출력한다. <br>
+    3. 배열 n에서 가장 큰 수를 찾아서 출력한다. <br>
+    4. 배열 n을 정렬한다. <br>
+    5. 배열 n을 출력한다. <br>
+    <hr>
+    <h3>sort 메소드 : 배열을 오름차순으로 정렬함. <br>
+    Math.random() : 랜덤한 숫자를 반환함. <br>
+    Math.floor() : 소수점 이하를 버림함.</h3>
+</body>
+</html>

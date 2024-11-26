@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split 함수 사용</title>
+    <style>
+        div {
+            display: inline-block;
+            width: 150px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- prompt 함수를 사용하여 입력받은 문자열을 저장하고 split함수를 사용하여 & 기준으로 문자를 분할 하시오 -->
+    <h3>Split 함수 사용</h3>
+    <script>
+        let str = prompt("문자열을 입력하세요.");
+        let result = str.split("&");
+        for(let i = 0; i < result.length; i++) {
+            document.write(`<div>${result[i]}</div>`);
+        }
+    </script>
+</body>
+</html>
