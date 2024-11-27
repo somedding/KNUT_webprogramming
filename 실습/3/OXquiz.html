@@ -10,23 +10,30 @@
     <script>
         let a = Math.floor(Math.random() * 9) + 1;
         let b = Math.floor(Math.random() * 9) + 1;
-        let e = a * b;
-        let c;
+        let correctResult = a * b;
+        let shownResult;
+    
         if(Math.random() < 0.4) {
-            c = e; 
+            shownResult = correctResult;
         } else {
             do {
-                c = Math.floor(Math.random() * 82);
-            } while(c === e);
+                shownResult = Math.floor(Math.random() * 82);
+            } while(shownResult === correctResult);
         }
-        let d = prompt(`${a} * ${b} = ${c} : O 또는 X를 입력하세요.`);
-        let isCorrect = (e === c);
+        
+        let userAnswer = prompt(`${a} * ${b} = ${shownResult} : O 또는 X를 입력하세요.`);
+        let isCorrect = (correctResult === shownResult);
         let correctAnswer = isCorrect ? 'O' : 'X';
         
-        if(d === correctAnswer) {
-            document.write(`${a} * ${b} = ${c} ${d} : 정답입니다!`);
+        if(userAnswer.toUpperCase() === correctAnswer) {
+            document.write(`${a} * ${b} = ${shownResult} 
+                          ${userAnswer.toUpperCase()} : 정답입니다! 
+                          (${a} * ${b} = ${correctResult})`);
         } else {
-            document.write(`${a} * ${b} = ${c} ${d} : 틀렸습니다!`);
+            document.write(`${a} * ${b} = ${shownResult} 
+                          ${userAnswer.toUpperCase()} : 틀렸습니다! 
+                          정답은 ${correctAnswer}입니다.
+                          (${a} * ${b} = ${correctResult})`);
         }
     </script>
 </body>
