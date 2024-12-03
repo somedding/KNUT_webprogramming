@@ -12,8 +12,10 @@
      <hr>
      <img src="sponge.jpeg" id="pic" onclick="rotate()">
      <script>
+        let angle = 0;
         function rotate(){
-            document.getElementById("pic").style.transform = "rotate(-90deg)";
+            angle += 90;
+            document.getElementById("pic").style.transform = "rotate(" + angle + "deg)";
         }
      </script>
 </body>
