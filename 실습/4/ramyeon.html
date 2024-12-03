@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>라면 끓이기</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- 라면 끓이는 순서를 ol에 prompt로 입력 받아 추가한다 -->
+    <h3>라면 끓이는 순서</h3>
+    <hr>
+    <ol type="A" style="background-color : yellowgreen" onclick="addItem(this)">
+        <li>물을 끓인다.</li>
+    </ol>
+    <script>
+        function addItem(ol){
+            var item = prompt("라면 끓이는 순서를 입력하세요.");
+            var li = document.createElement("li");
+            li.innerHTML = item;
+            ol.appendChild(li);
+        }
+    </script>
+
+</body>
+</html>
