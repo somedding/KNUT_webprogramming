@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스펀지 90도 회전</title>
+</head>
+<body>
+    <!-- 이미지를 클릭하면 이미지가 90도 회전 -->
+     <h3>클릭하면 사진이 90도로 회전</h3>
+     <hr>
+     <img src="sponge.jpeg" id="pic" onclick="rotate()">
+     <script>
+        function rotate(){
+            document.getElementById("pic").style.transform = "rotate(-90deg)";
+        }
+     </script>
+</body>
+</html>
