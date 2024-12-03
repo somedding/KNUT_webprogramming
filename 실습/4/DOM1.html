@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 연습</title>
+</head>
+<body>
+    <!-- 1번 다음 코드를 실행시키고 DOM 트리를 작성하시오 -->
+    <!-- 2번 border 버튼을 눌렀을때 C언어에 점선 테두리가 생기도록 하시오 -->
+    <!-- 3번 P 버튼을 눌렀을떄 태그의 개수 계산 -->
+    <h3>
+        자바스크립트 란?
+        <button id="border">border</button><button id="p">p</button>
+    </h3>
+    <hr>
+    <p>자바스크립트는 웹 프로그래밍 언어로서 웹 페이지를 동적 변경 시킬 수있다.</p>
+    <p><span id = "mySpan">C 언어</span>를 아는 사용자는 빠르게 학습할 수 있다.</p>
+    <p>이벤트 등 GUI 프로그래밍에 필요한 요소들이 있어 학습에 약간의 어려움이 있다.</p>
+
+    <script>
+        document.querySelector("#border").addEventListener("click", function(){
+            document.querySelector("#mySpan").style.border = "2px dotted red";
+        });
+        document.querySelector("#p").addEventListener("click", function(){
+            let count = document.querySelectorAll("p").length;
+            alert("P 태그의 개수는 " + count);
+        });
+    </script>
+</body>
+</html>
+

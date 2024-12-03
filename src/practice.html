@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실습 파일 목록</title>
+    <style>
+        @font-face {
+            font-family: 'Pretendard-Regular';
+            src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Pretendard-Regular';
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .file-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .file-button {
+            padding: 10px;
+            font-family: 'Pretendard-Regular';
+            background-color: gray;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .file-button:hover {
+            background-color: darkgray;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            color: #666;
+            margin-bottom: 10px;
+            border-bottom: 2px solid gray;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>실습 파일 목록</h2>
+
+    <div class="section">
+        <h3 class="section-title">실습 1</h3>
+        <div class="file-list">
+            <a href="../실습/1/alert.html" class="file-button">Alert 예제</a>
+            <a href="../실습/1/write.html" class="file-button">Write 예제</a>
+            <a href="../실습/1/name.html" class="file-button">Name 예제</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">실습 2</h3>
+        <div class="file-list">
+            <a href="../실습/2/for.html" class="file-button">For 예제</a>
+            <a href="../실습/2/for2.html" class="file-button">For 예제 2</a>
+            <a href="../실습/2/for3.html" class="file-button">For 예제 3</a>
+            <a href="../실습/2/for4.html" class="file-button">For 예제 4</a>
+            <a href="../실습/2/for5.html" class="file-button">For 예제 5</a>
+            <a href="../실습/2/function.html" class="file-button">Function 예제</a>
+            <a href="../실습/2/function2.html" class="file-button">Function 예제 2</a>
+            <a href="../실습/2/fucntion3.html" class="file-button">Function 예제 3</a>
+            <a href="../실습/2/if.html" class="file-button">If 예제</a>
+            <a href="../실습/2/if2.html" class="file-button">If 예제 2</a>
+            <a href="../실습/2/if3.html" class="file-button">If 예제 3</a>
+            <a href="../실습/2/switch.html" class="file-button">Switch 예제</a>
+            <a href="../실습/2/switch2.html" class="file-button">Switch 예제 2</a>
+            <a href="../실습/2/switch3.html" class="file-button">Switch 예제 3</a>
+            <a href="../실습/2/switch4.html" class="file-button">Switch 예제 4</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">실습 3</h3>
+        <div class="file-list">
+            <a href="../실습/3/OXquiz.html" class="file-button">OX 퀴즈</a>
+            <a href="../실습/3/Background.html" class="file-button">Background 예제</a>
+            <a href="../실습/3/Background2.html" class="file-button">Background 예제 2</a>
+            <a href="../실습/3/randomcolor.html" class="file-button">Random Color</a>
+            <a href="../실습/3/Sort.html" class="file-button">Sort 예제</a>
+            <a href="../실습/3/Sort2.html" class="file-button">Sort 예제 2</a>
+            <a href="../실습/3/Sort3.html" class="file-button">Sort 예제 3</a>
+            <a href="../실습/3/split.html" class="file-button">Split 예제</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3 class="section-title">실습 4</h3>
+        <div class="file-list">
+            <a href="../실습/4/Object.html" class="file-button">Object 예제</a>
+            <a href="../실습/4/Object2.html" class="file-button">Object 예제 2</a>
+            <a href="../실습/4/Object3.html" class="file-button">Object 예제 3</a>
+            <a href="../실습/4/ObjectA.html" class="file-button">Object 예제 분석</a>
+            <a href="../실습/4/DOM1.html" class="file-button">DOM 예제</a>
+        </div>
+    </div>
+
+    <div class="section"></div>
+</body>
+</html>

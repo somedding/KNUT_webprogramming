@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjectAnalysis</title>
+    <style>
+        li{
+            list-style-type: none;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 다음 프로그램을 실행 시키고 결과를 분석하시오 (등장하는 함수, 배열에 저장 방법, 객체의 프로퍼티 역할 등등) -->
+    <h3>book 객체 만들기</h3>
+    <hr>
+    <script>
+        let bookArray = new Array();
+        for(let i = 0; i<5; i++){
+            let input = prompt("콤마로 구분하여서 책 제목 저자 가격 순으로 입력" , "HTML5,황기태,20000")
+            let ar = input.split(",");
+            let book = new Object();
+            book.title = ar[0];
+            book.author = ar[1];
+            book.price = ar[2];
+            bookArray[i] = book;
+        }
+
+        for(let i = 0; i<bookArray.length; i++){
+            document.write(bookArray[i].title + ",");
+            document.write(bookArray[i].author + ",");
+            document.write(bookArray[i].price + "<br>");
+        }
+
+        let most = bookArray[0];
+        for(let i = 1; i<bookArray.length; i++){
+            if(bookArray[i].price > most.price)
+            most = bookArray[i];
+        }
+        document.write("<hr>가장 ???한 책은" + most.title);
+    </script>
+    <hr>
+    분석 : 
+    <ul>
+        <li>등장하는 함수 : split(), prompt(), new Object(), for(), if(), document.write()</li>
+        <li>배열에 저장 방법 : Array(), for() 이용</li>
+        <li>객체의 프로퍼티 역할 : 책 제목, 저자, 가격</li>
+    </ul>
+</body>
+</html>

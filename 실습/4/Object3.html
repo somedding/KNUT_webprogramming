@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object3</title>
+</head>
+<body>
+    <!-- 객체의 틀 (prototype)을 만들고 객체 생성하기 -->
+    <h3>book 객체 만들기</h3>
+    <hr>
+    <!-- <script>
+        let book = {
+            title : "HTML 5",
+            author : "홍길동",
+            price : 20000
+        };
+
+        document.write("book : ");
+        document.write(book.title + ",");
+        document.write(book.author + ",");
+        document.write(book.price + "<br>");
+    </script> -->
+
+    <script>
+        function Book(title, author, price){
+            this.title = title;
+            this.author = author;
+            this.price = price;
+        }
+        let book1 = new Book("HTML 5", "홍길동", 20000);
+
+        document.write("book1 : ");
+        document.write(book1.title + ",");
+        document.write(book1.author + ",");
+        document.write(book1.price + "<br>");
+    </script>
+</body>
+</html>

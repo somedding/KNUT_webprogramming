@@ -23,15 +23,25 @@
             text-align: center;
         }
 
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-family: 'Pretendard-Regular';
+            font-size: 16px;
+            cursor: pointer;
+        }
+
     </style>
 </head>
 <body>
     <!-- 16개의 랜덤 색상 출력하기 : 다음과 같이 출력하도록 하시오 <힌트: div { display : inline-block;
 width : 150px; padding : 10px; } > 
 < let r = Math.floor(Math.random()*256); > 사용
- --> \
+ --> 
 
     <h2>16개의 랜덤 색상 출력하기</h2>
+    <button onclick="location.reload()">새로고침</button>
     <script>
         for(let i = 0; i < 16; i++) {
             let r = Math.floor(Math.random()*256);

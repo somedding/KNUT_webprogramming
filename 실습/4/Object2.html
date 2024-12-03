@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object2</title>
+</head>
+<body>
+    <!-- 직접 객체 만들기 : New Object() 이용해서 만들기 -->
+    <h3>book 객체 만들기</h3>
+    <hr>
+    <!-- <script>
+        let book = {
+            title : "HTML 5",
+            author : "홍길동",
+            price : 20000
+        };
+
+        document.write("book : ");
+        document.write(book.title + ",");
+        document.write(book.author + ",");
+        document.write(book.price + "<br>");
+    </script> -->
+    <script>
+        let book = new Object();
+        book.title = "HTML 5";
+        book.author = "홍길동";
+        book.price = 20000;
+
+        document.write("book : ");
+        document.write(book.title + ",");
+        document.write(book.author + ",");
+        document.write(book.price + "<br>");
+    </script>
+    
+</body>
+</html>
