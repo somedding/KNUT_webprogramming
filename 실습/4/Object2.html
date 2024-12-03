@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Object2</title>
     <link rel="stylesheet" href="/styles.css" />
+    
 </head>
 <body>
     <!-- 직접 객체 만들기 : New Object() 이용해서 만들기 -->
@@ -34,5 +35,17 @@
         document.write(book.price + "<br>");
     </script>
     
+    <pre class="prettyprint lang-html">
+        let book = new Object();
+        book.title = "HTML 5";
+        book.author = "홍길동";
+        book.price = 20000;
+
+        document.write("book : ");
+        document.write(book.title + ",");
+        document.write(book.author + ",");
+        document.write(book.price + "&lt;br&gt;");
+    </pre>
+    <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 </body>
 </html>

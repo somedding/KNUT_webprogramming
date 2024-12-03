@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document객체의 프로퍼티 출력</title>
+    <script>
+        let text = "문서 로딩 중일 때 readyState = " + document.readyState + "\n";
+    </script>
+    
+</head>
+<body style="background-color:yellow; color:blue; direction:rtl"
+onload="printProperties()">
+>
+    <h3>document의 주요 프로퍼티</h3>
+    <hr>
+    <a href="http://www.naver.com">네이버 홈페이지</a>
+    <div>이곳은 div 영역입니다.</div>
+    <input id="input" type="text" value="여기 포커스가 있습니다"> <br>
+    <hr>
+    <script>
+        function printProperties() {  
+            document.getElementById("input").focus(); // <input> 태그에 포커스를 줌
+
+            text += "1. location =" + document.location + "\n";
+            text += "2. URL =" + document.URL + "\n";
+            text += "3. title =" + document.title + "\n";
+            text += "4. head의 id =" + document.head.id + "\n";
+            text += "5. body color =" + document.body.style.color + "\n";
+            text += "6. domain =" + document.domain + "\n";;
+            text += "7. lastModified =" + document.lastModified + "\n";
+            text += "8. defaultView = " + document.defaultView + "\n";
+            text += "9. 문서의 로드 완료 후 readyState = " + document.readyState + "\n";
+            text += "10. referrer = " + document.referrer + "\n";
+            text += "11. activeElement = " + document.activeElement.value + "\n";
+            text += "12. documentElement의 태그 이름 = " + document.documentElement.tagName + "\n";
+            alert(text);
+        }
+    </script>
+
+    <!-- 프로퍼티의 값이 왜 그렇게 찍히는가 설명 -->
+    
+
+    1. location : 현재문서의 URL 정보를 가진 location <br>
+    2. URL : 서버의 도메인 이름<br>
+    3. Title : 문서의 title 제목 문자열<br>
+    4. head의 id : head 태그의 id 속성 값<br>
+    5. body color : body 태그의 style 속성에 있는 color 값 / 여기서는 blue<br>
+    6. domain : 서버의 도메인 이름<br>
+    7. lastModified : 문서의 마지막 수정일이 적혀있음<br>
+    8. defaultView : 문서의 기본 뷰를 가진 window 객체<br>
+    9. 문서의 로드 완료 후 readyState : 문서의 로드 상태를 나타내는 문자열<br>
+    10. referrer : 현재 문서를 보고 있는 문서의 URL<br>
+    11. activeElement : 현재 포커스에 적혀있는 요소<br>
+    12. documentElement의 태그 이름 : 문서의 최상위 요소의 태그 이름<br>
+</body>
+</html>

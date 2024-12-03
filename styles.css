@@ -309,3 +309,21 @@ ul a:hover {
     padding: 0.25em;
     margin: 1em;
 }
+
+/* code {
+    display: block; 
+    background-color: #f4f4f4; 
+    padding: 15px; 
+    border-radius: 5px; 
+    font-family: monospace;
+} */
+
+pre.prettyprint {
+    padding: 14px; 
+    font-size: 1.1rem;
+    line-height: 1.45; 
+    background-color: #f6f8fa; 
+    border-radius: 3px; 
+    border: 1px solid #fff;
+    margin: 2px; 
+}
